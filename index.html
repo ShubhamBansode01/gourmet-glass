@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GourmetGlass | AI Food Explorer</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="description" content="Premium Glassmorphic Food App with AI-curated recipes.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8349127002085017"
+     crossorigin="anonymous"></script>
+     
+<body class="dark-theme">
+
+    <header class="sticky-header">
+        <div class="header-top">
+            <div class="logo">GOURMET <span style="font-weight:300;">GLASS</span></div>
+            <div class="header-actions">
+                <button id="refresh-btn" class="icon-btn">🔄</button>
+                <button id="theme-toggle" class="theme-btn">🌓</button>
+            </div>
+        </div>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search by name or ingredient...">
+            </div>
+        </div>
+        <div class="categories" id="categoryList">
+            <button class="cat-btn active" data-category="Beef">Beef</button>
+            <button class="cat-btn" data-category="Chicken">Chicken</button>
+            <button class="cat-btn" data-category="Dessert">Dessert</button>
+            <button class="cat-btn" data-category="Seafood">Seafood</button>
+            <button class="cat-btn" data-category="Pasta">Pasta</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="ad-segment-top" class="ads-hidden-segment">
+            <div class="ad-label">SPONSORED GOURMET CONTENT</div>
+        </div>
+        <main class="meal-grid" id="mealGrid"></main>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active" id="nav-home">🏠 <span class="nav-label">EXPLORE</span></a>
+        <a href="#" class="nav-item" id="fav-trigger">❤️ <span class="nav-label">SAVED</span></a>
+    </nav>
+
+    <div class="modal" id="recipeModal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+    <footer style="padding: 40px 20px 120px; background: var(--glass-bg); text-align: center; border-top: 1px solid var(--glass-border); margin-top: 50px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h3 style="color: var(--accent); margin-bottom: 15px;">About GourmetGlass</h3>
+        <p style="font-size: 0.85rem; opacity: 0.8; line-height: 1.6; margin-bottom: 20px;">
+            Developed by <b>@ShortsKing-o5u</b>. GourmetGlass is a premium AI-curated recipe explorer 
+            designed for students and food enthusiasts. We focus on high-performance UI and 
+            easy-to-follow cooking instructions.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.75rem;">
+            <a href="#" onclick="showPrivacy()" style="color: var(--text-color); text-decoration: none; opacity: 0.6;">Privacy Policy</a>
+            <a href="https://www.youtube.com/@ShortsKing-o5u" target="_blank" style="color: var(--text-color); text-decoration: none; opacity: 0.6;">Contact/YouTube</a>
+        </div>
+        <p style="font-size: 0.65rem; margin-top: 25px; opacity: 0.4;">&copy; 2026 GourmetGlass. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+// Privacy Policy Modal Logic
+function showPrivacy() {
+    alert("Privacy Policy: GourmetGlass does not collect personal user data. We use LocalStorage to save your favorite recipes locally on your device. Cookies may be used by Google AdSense for personalized advertising.");
+}
+</script>
+
+<div id="cookie-consent" class="cookie-banner">
+    <div class="cookie-content">
+        <p>🍪 We use cookies to enhance your experience and show personalized ads via Google AdSense. 
+           <a href="#" onclick="showPrivacy()">Learn more</a></p>
+        <button onclick="acceptConsent()" class="accept-btn">Accept & Cook!</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
