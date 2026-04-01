@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Direct Google to your Sitemap
+Sitemap: https://gourmet-glass-ymhc.vercel.app/sitemap.xml
