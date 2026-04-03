@@ -180,3 +180,42 @@ body {
     .categories { flex-basis: 100%; justify-content: center; }
     .container { padding-top: 200px; }
 }
+/* Instagram Brand Button - Glassmorphism Edition */
+.share-insta-btn {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    
+    /* Instagram Signature Gradient */
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    
+    /* Soft Glow Effect */
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+    transition: all 0.3s ease;
+    
+    /* Glassy border to match your theme */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.share-insta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 39, 67, 0.6);
+}
+
+.share-insta-btn:active {
+    transform: scale(0.95);
+}
+
+.share-insta-btn i {
+    font-size: 1.2rem; /* Font Awesome icon size */
+}
