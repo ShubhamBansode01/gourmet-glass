@@ -1,104 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
- <meta property="og:site_name" content="GourmetGlass">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "GourmetGlass",
-  "url": "https://gourmet-glass-ymhc.vercel.app/"
-}
-</script>    
-    <title>GourmetGlass | AI Food Explorer</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="description" content="Premium Glassmorphic Food App with AI-curated recipes.">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
+    <title>GourmetGlass | AI-Powered Premium Recipes</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6J3NXVE4W4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6J3NXVE4W4');
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824"
-     crossorigin="anonymous"></script>
-     
 <body class="dark-theme">
 
     <header class="sticky-header">
+        <h1 style="display:none;">GourmetGlass - Premium AI Curated Recipes for Students</h1>
+        
         <div class="header-top">
             <div class="logo">GOURMET <span style="font-weight:300;">GLASS</span></div>
-            <div class="header-actions">
-                <button id="refresh-btn" class="icon-btn">🔄</button>
-                <button id="theme-toggle" class="theme-btn">🌓</button>
-            </div>
         </div>
-        <div class="search-wrapper">
-            <div class="search-box">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="searchInput" placeholder="Search by name or ingredient...">
-            </div>
-        </div>
-        <div class="categories" id="categoryList">
-            <button class="cat-btn active" data-category="Beef">Beef</button>
-            <button class="cat-btn" data-category="Chicken">Chicken</button>
-            <button class="cat-btn" data-category="Dessert">Dessert</button>
-            <button class="cat-btn" data-category="Seafood">Seafood</button>
-            <button class="cat-btn" data-category="Pasta">Pasta</button>
-        </div>
-    </header>
+        </header>
 
-    <div class="container">
-        <div id="ad-segment-top" class="ads-hidden-segment">
-            <div class="ad-label">SPONSORED GOURMET CONTENT</div>
+    <main class="container">
+        <article id="site-intro" style="padding: 20px; color: #ccc; font-size: 0.9rem; line-height: 1.6;">
+            <h2>Your Ultimate AI Food Explorer</h2>
+            <p>Welcome to <strong>GourmetGlass</strong>, where culinary art meets artificial intelligence. We provide high-quality, easy-to-follow recipes specifically designed for students and busy food enthusiasts. Our platform uses advanced algorithms to curate the best meals from around the world, ensuring you get healthy, delicious, and budget-friendly options every day.</p>
+        </article>
+
+        <div id="mealGrid" class="meal-grid"></div>
+    </main>
+
+    <section class="author-bio" style="margin: 20px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 15px;">
+        <h3 style="color:var(--accent);">About the Chef Master</h3>
+        <p>Curated by <strong>ShortsKing</strong>, a professional Full-Stack Developer and UI/UX Designer. With a passion for clean code and great food, I bring you a seamless recipe browsing experience powered by AI.</p>
+    </section>
+
+    <footer style="text-align:center; padding: 40px;">
+        <div class="footer-links">
+            <a href="about.html">About Us</a> | 
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="mailto:shubhambansode925@gmail.com">Contact Us</a>
         </div>
-        <main class="meal-grid" id="mealGrid"></main>
+        <p style="opacity:0.5; font-size:0.7rem;">&copy; 2026 GourmetGlass. All Rights Reserved.</p>
+    </footer>
+
+    <div id="cookie-consent" class="cookie-banner" style="display:none;">
+        <p>🍪 We use cookies for a better experience. <button onclick="acceptConsent()">Accept</button></p>
     </div>
 
-    <nav class="bottom-nav">
-        <a href="#" class="nav-item active" id="nav-home">🏠 <span class="nav-label">EXPLORE</span></a>
-        <a href="#" class="nav-item" id="fav-trigger">❤️ <span class="nav-label">SAVED</span></a>
-    </nav>
-
-    <div class="modal" id="recipeModal">
-        <div class="modal-content" id="modalContent"></div>
-    </div>
-    <footer style="padding: 40px 20px 120px; background: var(--glass-bg); text-align: center; border-top: 1px solid var(--glass-border); margin-top: 50px;">
-    <div style="max-width: 800px; margin: 0 auto;">
-        <h3 style="color: var(--accent); margin-bottom: 15px;">About GourmetGlass</h3>
-        <p style="font-size: 0.85rem; opacity: 0.8; line-height: 1.6; margin-bottom: 20px;">
-            Developed by <b>@ShortsKing-o5u</b>. GourmetGlass is a premium AI-curated recipe explorer 
-            designed for students and food enthusiasts. We focus on high-performance UI and 
-            easy-to-follow cooking instructions.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.75rem;">
-            <a href="about.html">About Us</a> | <a href="privacy-policy.html">Privacy Policy</a> |
-            <a href="mailto: shubhambansode925@gmail.com">Contact Us</a>
-        </div>
-        <p style="font-size: 0.65rem; margin-top: 25px; opacity: 0.4;">&copy; 2026 GourmetGlass. All Rights Reserved.</p>
-    </div>
-</footer>
-    
-<div id="cookie-consent" class="cookie-banner">
-    <div class="cookie-content">
-        <p>🍪 We use cookies to enhance your experience and show personalized ads via Google AdSense. 
-           <a href="#" onclick="showPrivacy()">Learn more</a></p>
-        <button onclick="acceptConsent()" class="accept-btn">Accept & Cook!</button>
-    </div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
-
-
