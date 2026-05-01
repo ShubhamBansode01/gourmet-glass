@@ -2,45 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
-    <title>GourmetGlass | AI-Powered Premium Recipes</title>
+    <title>GourmetGlass | Premium AI Recipe Suite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
 </head>
 <body class="dark-theme">
 
-    <header class="sticky-header">
-        <div class="logo">GOURMET <span style="font-weight:300;">GLASS</span></div>
-        <div class="search-wrapper">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search premium recipes...">
-            </div>
-        </div>
-        <div class="categories" id="categoryList">
-            <button class="cat-btn active" data-category="Beef">Beef</button>
-            <button class="cat-btn" data-category="Chicken">Chicken</button>
-            <button class="cat-btn" data-category="Dessert">Dessert</button>
-        </div>
+    <header class="main-header">
+        <div class="logo">Foodie<span>Glass</span></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="about.html">About</a>
+        </button>
     </header>
 
-    <main class="container">
-        <div id="mealGrid" class="meal-grid" style="min-height: 50vh; display: grid; gap: 20px; padding: 20px;">
-            <p id="loading-text" style="color: white; text-align: center; grid-column: 1/-1;">Connecting to AI Chef...</p>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Your Favourite Food <br><span>Curated by AI</span></h1>
+            <p>Healthy switcher chefs do all the prep work, providing high-performance recipe guides for your daily lifestyle.</p>
+            <button class="cta-btn" onclick="document.getElementById('menu').scrollIntoView()">Explore Menu</button>
+        </div>
+        <div class="hero-image">
+            <div class="orange-blob"></div>
+            <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Featured Dish" loading="lazy">
+        </div>
+    </section>
+
+    <main class="container" id="menu">
+        <div class="section-title">
+            <h2>Explore Our Best Menu</h2>
+            <div class="categories" id="categoryList">
+                <button class="cat-btn active" data-category="Beef">Beef</button>
+                <button class="cat-btn" data-category="Chicken">Chicken</button>
+                <button class="cat-btn" data-category="Dessert">Dessert</button>
+                <button class="cat-btn" data-category="Seafood">Seafood</button>
+            </div>
         </div>
 
-        <article class="hero-seo-card" style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 20px; margin: 30px 20px;">
-            <h1 style="color: var(--accent); font-size: 1.4rem;">GourmetGlass: The Next-Gen AI Food Explorer</h1>
-            <p style="color: #ddd; font-size: 0.9rem;">Premium digital sanctuary curated by <strong>ShortsKing</strong> for food enthusiasts globally.</p>
-        </article>
+        <div id="mealGrid" class="meal-grid">
+            </div>
     </main>
 
-    <nav class="bottom-nav">
-        <a href="#" class="nav-item active" id="nav-home">🏠 EXPLORE</a>
-        <a href="#" class="nav-item" id="fav-trigger">❤️ SAVED</a>
-    </nav>
-
-    <div class="modal" id="recipeModal"><div class="modal-content" id="modalContent"></div></div>
+    <div class="modal" id="recipeModal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
