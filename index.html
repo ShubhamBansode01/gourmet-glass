@@ -5,64 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
     <title>GourmetGlass | AI-Powered Premium Recipes</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
 </head>
-
 <body class="dark-theme">
 
     <header class="sticky-header">
-        <div class="header-top">
-            <div class="logo">GOURMET <span style="font-weight:300;">GLASS</span></div>
-        </div>
-        
+        <div class="logo">GOURMET <span style="font-weight:300;">GLASS</span></div>
         <div class="search-wrapper">
             <div class="search-box">
-                <span class="search-icon">🔍</span>
                 <input type="text" id="searchInput" placeholder="Search premium recipes...">
             </div>
         </div>
-
         <div class="categories" id="categoryList">
             <button class="cat-btn active" data-category="Beef">Beef</button>
             <button class="cat-btn" data-category="Chicken">Chicken</button>
             <button class="cat-btn" data-category="Dessert">Dessert</button>
-            <button class="cat-btn" data-category="Seafood">Seafood</button>
         </div>
     </header>
 
     <main class="container">
-        <div id="mealGrid" class="meal-grid" style="min-height: 400px;">
-            </div>
+        <div id="mealGrid" class="meal-grid" style="min-height: 50vh; display: grid; gap: 20px; padding: 20px;">
+            <p id="loading-text" style="color: white; text-align: center; grid-column: 1/-1;">Connecting to AI Chef...</p>
+        </div>
 
-        <article class="hero-seo-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 20px; margin: 30px 0; backdrop-filter: blur(10px);">
-            <h1 style="color: var(--accent); font-size: 1.4rem; margin-bottom: 10px;">GourmetGlass: The Next-Gen AI Food Explorer</h1>
-            <p style="color: #ddd; line-height: 1.6; font-size: 0.9rem;">
-                GourmetGlass is a premium digital sanctuary where technology meets culinary art. Curated by <strong>ShortsKing</strong>, our platform provides high-quality, AI-curated recipe guides for food enthusiasts globally.
-            </p>
+        <article class="hero-seo-card" style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 20px; margin: 30px 20px;">
+            <h1 style="color: var(--accent); font-size: 1.4rem;">GourmetGlass: The Next-Gen AI Food Explorer</h1>
+            <p style="color: #ddd; font-size: 0.9rem;">Premium digital sanctuary curated by <strong>ShortsKing</strong> for food enthusiasts globally.</p>
         </article>
     </main>
 
     <nav class="bottom-nav">
-        <a href="#" class="nav-item active" id="nav-home">🏠 <span class="nav-label">EXPLORE</span></a>
-        <a href="#" class="nav-item" id="fav-trigger">❤️ <span class="nav-label">SAVED</span></a>
+        <a href="#" class="nav-item active" id="nav-home">🏠 EXPLORE</a>
+        <a href="#" class="nav-item" id="fav-trigger">❤️ SAVED</a>
     </nav>
 
-    <div class="modal" id="recipeModal">
-        <div class="modal-content" id="modalContent"></div>
-    </div>
-
-    <footer style="padding: 40px 20px 120px; text-align: center; opacity: 0.6; font-size: 0.8rem;">
-        <div style="margin-bottom: 20px;">
-            <a href="about.html" style="color:white; text-decoration:none;">About</a> | 
-            <a href="privacy.html" style="color:white; text-decoration:none;">Privacy</a> |
-            <a href="terms.html" style="color:white; text-decoration:none;">Terms</a>
-        </div>
-        <p>&copy; 2026 GourmetGlass. All Rights Reserved.</p>
-    </footer>
+    <div class="modal" id="recipeModal"><div class="modal-content" id="modalContent"></div></div>
 
     <script src="script.js"></script>
 </body>
