@@ -4,74 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
-    <title>GourmetGlass | Premium AI Culinary Exploration Suite</title>
+    <title>GourmetGlass | Premium AI Recipe Suite</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
 </head>
 <body class="dark-theme">
 
-    <header class="glass-header">
-        <div class="header-container">
-            <div class="logo">Foodie<span>Glass</span></div>
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Search 5000+ recipes...">
-                <span class="search-icon">🔍</span>
-            </div>
+    <header class="main-header">
+        <div class="logo">Gourmet<span>Glass</span></div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search premium meals...">
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="hero-text">
-                <span class="badge">#1 AI Recipe App</span>
-                <h1>Discover Food <br><span>Beyond Limits</span></h1>
-                <p>High-performance culinary guides curated by <strong>ShortsKing</strong>. Experience the future of home cooking today.</p>
-                <div class="hero-btns">
-                    <button class="primary-btn" onclick="document.getElementById('explore').scrollIntoView()">Start Cooking</button>
-                    <button class="secondary-btn">How it Works</button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="glow-sphere"></div>
-                <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Hero Dish" class="float-img">
-            </div>
-        </section>
-
-        <div class="category-wrapper" id="explore">
-            <div class="category-slider">
-                <button class="cat-card active" data-category="Beef">🥩 <span>Beef</span></button>
-                <button class="cat-card" data-category="Chicken">🍗 <span>Poultry</span></button>
-                <button class="cat-card" data-category="Dessert">🍰 <span>Sweets</span></button>
-                <button class="cat-card" data-category="Seafood">🐟 <span>Seafood</span></button>
-                <button class="cat-card" data-category="Pasta">🍝 <span>Pasta</span></button>
-            </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium AI <br><span>Recipe Suite</span></h1>
+            <p>Your high-performance guide to healthy and budget-friendly cooking.</p>
         </div>
+        <div class="hero-graphic">
+            <div class="glow-orb"></div>
+            <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Hero" loading="lazy">
+        </div>
+    </section>
 
-        <section class="grid-section">
-            <div id="mealGrid" class="meal-grid">
-                </div>
-        </section>
+    <div class="categories-bar" id="categoryList">
+        <button class="cat-btn active" data-category="Beef">Beef</button>
+        <button class="cat-btn" data-category="Chicken">Chicken</button>
+        <button class="cat-btn" data-category="Dessert">Dessert</button>
+        <button class="cat-btn" data-category="Seafood">Seafood</button>
+        <button class="cat-btn" data-category="Pasta">Pasta</button>
+    </div>
 
-        <article class="seo-expert-section">
-            <div class="seo-card">
-                <h2>The Science of AI-Driven Nutrition</h2>
-                <p>In 2026, <strong>GourmetGlass</strong> stands as a beacon for budget-conscious food enthusiasts. By leveraging structural ingredient analysis, we provide 800+ words of unique depth for every culinary guide, ensuring "Valuable Inventory" for our global users and partners. Every step is a masterclass in efficiency and taste.</p>
+    <main class="container">
+        <div id="mealGrid" class="meal-grid">
             </div>
+
+        <article class="seo-footer-card">
+            <h2>Next-Gen Culinary Exploration</h2>
+            <p>GourmetGlass is a digital sanctuary for food enthusiasts, providing AI-curated insights into global cuisines. Our mission is to bridge the gap between technology and traditional cooking through professional web architecture.</p>
         </article>
     </main>
 
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active" id="nav-home">🏠 EXPLORE</a>
+        <a href="#" class="nav-item" id="fav-trigger">❤️ SAVED</a>
+    </nav>
+
     <div class="modal" id="recipeModal">
-        <div class="modal-overlay" onclick="closeModal()"></div>
         <div class="modal-content" id="modalContent"></div>
     </div>
 
-    <nav class="dock-nav">
-        <a href="#" class="dock-item active" id="nav-home">🏠</a>
-        <a href="#" class="dock-item" id="fav-trigger">❤️</a>
-        <a href="privacy.html" class="dock-item">📜</a>
-    </nav>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="about.html">About</a> | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms</a>
+        </div>
+        <p>&copy; 2026 GourmetGlass. Curated by ShortsKing.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
