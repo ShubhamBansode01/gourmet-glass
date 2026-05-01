@@ -27,6 +27,28 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--t
 .hero-graphic img { width: 120%; animation: float 3s ease-in-out infinite; }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 
+/* Table Styling for AdSense */
+.data-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.8rem; background: rgba(255,255,255,0.02); }
+.data-table th, .data-table td { border: 1px solid rgba(255,255,255,0.1); padding: 12px; text-align: left; }
+.data-table th { background: var(--primary); color: white; }
+
+/* Content Depth Styling */
+.deep-content { margin: 25px 0; color: #ccc; }
+.deep-content h3 { color: var(--primary); font-size: 1rem; margin: 20px 0 10px; }
+.deep-content p { line-height: 1.8; font-size: 0.85rem; margin-bottom: 15px; }
+
+/* Master Guide Hero */
+.master-guide-card { background: linear-gradient(145deg, rgba(255,127,17,0.1), transparent); border: 1px solid rgba(255,127,17,0.2); padding: 30px; border-radius: 25px; margin-bottom: 40px; }
+.master-guide-card h1 { font-size: 1.8rem; margin-bottom: 15px; }
+.value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 20px 0; }
+.v-item h3 { color: var(--primary); font-size: 0.8rem; margin-bottom: 5px; }
+.v-item p { font-size: 0.7rem; opacity: 0.7; }
+
+/* Skeleton Loading */
+.skeleton { height: 180px; background: rgba(255,255,255,0.05); border-radius: 20px; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 0.8; } 100% { opacity: 0.5; } }
+
+
 /* Categories Scroll */
 .categories-bar { display: flex; overflow-x: auto; padding: 15px 20px; gap: 10px; scrollbar-width: none; }
 .categories-bar::-webkit-scrollbar { display: none; }
