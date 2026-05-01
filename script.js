@@ -103,4 +103,49 @@ window.showRecipe = async (id) => {
 
 window.closeModal = () => { modal.style.display = 'none'; triggerHaptic(10); };
 
+// Check if script is running
+console.log("GourmetGlass Script Loaded");
+
+const mealGrid = document.getElementById('mealGrid');
+
+async function fetchByCategory(cat) {
+    if (!mealGrid) {
+        console.error("mealGrid element not found!");
+        return;
+    }
+
+    try {
+        const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${cat}`);
+        const data = await res.json();
+        
+        if (data.meals) {
+            mealGrid.innerHTML = data.meals.map(meal => `
+                <div class="meal-card" onclick="showRecipe('${meal.idMeal}')" style="background:rgba(255,255,255,0.05); border-radius:15px; overflow:hidden;">
+                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" loading="lazy" style="width:100%; display:block;">
+                    <div style="padding:15px;">
+                        <h3 style="font-size:0.9rem; color:white;">${meal.strMeal}</h3>
+                    </div>
+                </div>
+            `).join('');
+        }
+    } catch (e) {
+        mealGrid.innerHTML = "<p style='color:red; text-align:center;'>API Error. Please refresh.</p>";
+    }
+}
+
+// Ensure the function runs after the page loads
+window.onload = () => {
+    fetchByCategory('Beef');
+};
+
+// Category button clicks
+document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.onclick = () => {
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        fetchByCategory(btn.dataset.category);
+    };
+});
+
+
 // ... (Search, Theme, Consent Logic remains same as previous version)
