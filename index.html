@@ -3,35 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
     <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
     <title>GourmetGlass | AI-Powered Premium Recipes</title>
-    <meta name="description" content="Discover AI-curated premium recipes with GourmetGlass. High-quality and budget-friendly meal guides for food enthusiasts.">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "GourmetGlass",
-      "url": "https://gourmet-glass-ymhc.vercel.app/",
-      "author": {
-        "@type": "Person",
-        "name": "ShortsKing"
-      }
-    }
-    </script>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6J3NXVE4W4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-6J3NXVE4W4');
-    </script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
 </head>
@@ -41,9 +17,6 @@
     <header class="sticky-header">
         <div class="header-top">
             <div class="logo">GOURMET <span style="font-weight:300;">GLASS</span></div>
-            <div class="header-actions">
-                <button id="theme-toggle" class="theme-btn">🌓</button>
-            </div>
         </div>
         
         <div class="search-wrapper">
@@ -58,23 +31,19 @@
             <button class="cat-btn" data-category="Chicken">Chicken</button>
             <button class="cat-btn" data-category="Dessert">Dessert</button>
             <button class="cat-btn" data-category="Seafood">Seafood</button>
-            <button class="cat-btn" data-category="Pasta">Pasta</button>
         </div>
     </header>
 
     <main class="container">
-        <article class="hero-seo-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; margin-bottom: 30px; backdrop-filter: blur(10px);">
-            <h1 style="color: var(--accent); font-size: 1.6rem; margin-bottom: 15px; text-align: center;">GourmetGlass: The Next-Gen AI Food Explorer</h1>
-            <p style="color: #ddd; line-height: 1.8; font-size: 0.95rem; margin-bottom: 20px;">
-                Welcome to <strong>GourmetGlass</strong>, a premium digital space where technology meets culinary art. Curated by <strong>ShortsKing</strong>, this platform uses AI-driven insights to provide the most efficient and delicious recipe guides for global food lovers.
-            </p>
-            <p style="color: #bbb; line-height: 1.8; font-size: 0.9rem;">
-                Our focus is on providing high-value content through structural analysis of ingredients and preparation methods. Whether you are a student or a busy professional, GourmetGlass helps you master cooking with premium AI-curated instructions.
+        <div id="mealGrid" class="meal-grid" style="min-height: 400px;">
+            </div>
+
+        <article class="hero-seo-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); padding: 25px; border-radius: 20px; margin: 30px 0; backdrop-filter: blur(10px);">
+            <h1 style="color: var(--accent); font-size: 1.4rem; margin-bottom: 10px;">GourmetGlass: The Next-Gen AI Food Explorer</h1>
+            <p style="color: #ddd; line-height: 1.6; font-size: 0.9rem;">
+                GourmetGlass is a premium digital sanctuary where technology meets culinary art. Curated by <strong>ShortsKing</strong>, our platform provides high-quality, AI-curated recipe guides for food enthusiasts globally.
             </p>
         </article>
-
-        <div id="mealGrid" class="meal-grid">
-            </div>
     </main>
 
     <nav class="bottom-nav">
@@ -86,22 +55,13 @@
         <div class="modal-content" id="modalContent"></div>
     </div>
 
-    <footer style="padding: 60px 20px 140px; background: rgba(0,0,0,0.4); text-align: center; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 50px;">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <h2 style="color: var(--accent); font-size: 1.3rem; margin-bottom: 15px;">A Product of Digital Innovation</h2>
-            <p style="color: #999; font-size: 0.85rem; line-height: 1.7; margin-bottom: 30px;">
-                GourmetGlass is developed using mobile-based development environments to prove that high-quality tech solutions can be built anywhere.
-            </p>
-            
-            <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.85rem; flex-wrap: wrap; margin-bottom: 30px;">
-                <a href="about.html" style="color: var(--accent); text-decoration: none;">Our Story</a> | 
-                <a href="privacy.html" style="color: var(--accent); text-decoration: none;">Privacy Policy</a> |
-                <a href="terms.html" style="color: var(--accent); text-decoration: none;">Terms</a> |
-                <a href="mailto:shubhambansode925@gmail.com" style="color: var(--accent); text-decoration: none;">Contact</a>
-            </div>
-            
-            <p style="font-size: 0.75rem; opacity: 0.4;">&copy; 2026 GourmetGlass | All Rights Reserved.</p>
+    <footer style="padding: 40px 20px 120px; text-align: center; opacity: 0.6; font-size: 0.8rem;">
+        <div style="margin-bottom: 20px;">
+            <a href="about.html" style="color:white; text-decoration:none;">About</a> | 
+            <a href="privacy.html" style="color:white; text-decoration:none;">Privacy</a> |
+            <a href="terms.html" style="color:white; text-decoration:none;">Terms</a>
         </div>
+        <p>&copy; 2026 GourmetGlass. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
