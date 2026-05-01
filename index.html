@@ -5,67 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
     <title>GourmetGlass | Premium AI Recipe Suite</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
 </head>
 <body class="dark-theme">
 
-    <header class="main-header">
+    <header class="site-header">
         <div class="logo">Gourmet<span>Glass</span></div>
-        <div class="search-container">
+        <div class="search-wrapper">
+            <span class="search-icon">🔍</span>
             <input type="text" id="searchInput" placeholder="Search premium meals...">
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Premium AI <br><span>Recipe Suite</span></h1>
-            <p>Your high-performance guide to healthy and budget-friendly cooking.</p>
-        </div>
-        <div class="hero-graphic">
-            <div class="glow-orb"></div>
-            <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Hero" loading="lazy">
-        </div>
-    </section>
+    <main class="main-content">
+        <section class="hero-box">
+            <div class="hero-info">
+                <h1>Premium AI <br><span>Recipe Suite</span></h1>
+                <p>Your high-performance guide to healthy and budget-friendly cooking.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Featured" loading="lazy">
+            </div>
+        </section>
 
-    <div class="categories-bar" id="categoryList">
-        <button class="cat-btn active" data-category="Beef">Beef</button>
-        <button class="cat-btn" data-category="Chicken">Chicken</button>
-        <button class="cat-btn" data-category="Dessert">Dessert</button>
-        <button class="cat-btn" data-category="Seafood">Seafood</button>
-        <button class="cat-btn" data-category="Pasta">Pasta</button>
-    </div>
+        <article class="home-seo-article">
+            <h2>The Future of Culinary Intelligence</h2>
+            <p>GourmetGlass is a digital sanctuary for food enthusiasts, providing AI-curated insights into global cuisines. Our mission is to bridge the gap between technology and traditional cooking through professional web architecture. Curated by <strong>ShortsKing</strong>, every recipe is a masterclass in efficiency.</p>
+        </article>
 
-    <main class="container">
+        <div class="category-row" id="categoryList">
+            <button class="cat-pill active" data-category="Beef">Beef</button>
+            <button class="cat-pill" data-category="Chicken">Chicken</button>
+            <button class="cat-pill" data-category="Dessert">Dessert</button>
+            <button class="cat-pill" data-category="Seafood">Seafood</button>
+        </div>
+
         <div id="mealGrid" class="meal-grid">
             </div>
-
-        <article class="seo-footer-card">
-            <h2>Next-Gen Culinary Exploration</h2>
-            <p>GourmetGlass is a digital sanctuary for food enthusiasts, providing AI-curated insights into global cuisines. Our mission is to bridge the gap between technology and traditional cooking through professional web architecture.</p>
-        </article>
     </main>
 
-    <nav class="bottom-nav">
-        <a href="#" class="nav-item active" id="nav-home">🏠 EXPLORE</a>
-        <a href="#" class="nav-item" id="fav-trigger">❤️ SAVED</a>
+    <nav class="bottom-dock">
+        <a href="#" class="dock-item active" id="nav-home">🏠 <span class="label">EXPLORE</span></a>
+        <a href="#" class="dock-item" id="fav-trigger">❤️ <span class="label">SAVED</span></a>
+        <a href="privacy.html" class="dock-item">📜 <span class="label">PRIVACY</span></a>
     </nav>
 
     <div class="modal" id="recipeModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
         <div class="modal-content" id="modalContent"></div>
     </div>
-
-    <footer class="site-footer">
-        <div class="footer-links">
-            <a href="about.html">About</a> | 
-            <a href="privacy.html">Privacy Policy</a> | 
-            <a href="terms.html">Terms</a>
-        </div>
-        <p>&copy; 2026 GourmetGlass. Curated by ShortsKing.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
 
