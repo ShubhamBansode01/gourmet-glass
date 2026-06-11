@@ -43,11 +43,55 @@
         </div>
 
         <div id="mealGrid" class="meal-grid">
+            <!-- Meal cards will be injected here via JS -->
+        </div>
+
+        <!-- ==========================================
+             NEW BLOG SECTION START
+             ========================================== -->
+        <section class="blog-section" id="blog">
+            <div class="section-header">
+                <h2>Latest Culinary Articles</h2>
             </div>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1: Linking to the generated Chicken Recipe -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80" alt="Spicy Chicken Curry" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">June 11, 2026</span>
+                        <h3>मसालेदार काला चिकन सुक्का (Spicy Black Chicken)</h3>
+                        <p>10 लोगों के लिए खास दावत: मसालेदार काला चिकन सुक्का और तरीदार काला रस्सा। A perfect feast for 10 people.</p>
+                        <a href="chicken-recipe.html" class="read-more-btn">Read Article ➔</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2: Placeholder -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=500&q=80" alt="AI in Kitchen" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">June 08, 2026</span>
+                        <h3>How AI is Revolutionizing Home Cooking</h3>
+                        <p>Discover how algorithms are helping home chefs minimize waste, prep faster, and maximize flavor on a budget.</p>
+                        <a href="#" class="read-more-btn">Read Article ➔</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ==========================================
+             NEW BLOG SECTION END
+             ========================================== -->
+
     </main>
 
     <nav class="bottom-dock">
         <a href="#" class="dock-item active" id="nav-home">🏠 <span class="label">EXPLORE</span></a>
+        <!-- Added Blog Navigation Item -->
+        <a href="#blog" class="dock-item" id="nav-blog">📝 <span class="label">BLOG</span></a>
         <a href="#" class="dock-item" id="fav-trigger">❤️ <span class="label">SAVED</span></a>
         <a href="privacy.html" class="dock-item">📜 <span class="label">PRIVACY</span></a>
     </nav>
@@ -60,5 +104,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
