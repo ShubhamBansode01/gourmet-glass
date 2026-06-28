@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="GourmetGlass: Premium AI-curated recipe suite with 500+ global recipes, cooking guides, nutritional info, and expert culinary tips for home cooks.">
+    <meta name="keywords" content="recipes, cooking guide, meal planning, Indian recipes, vegetarian recipes, non-vegetarian recipes, healthy cooking, budget-friendly meals, culinary tips">
+    <meta name="author" content="GourmetGlass Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:title" content="GourmetGlass | Premium AI Recipe Suite & Cooking Guide">
+    <meta property="og:description" content="Discover premium AI-curated recipes with detailed cooking instructions, nutritional analysis, and expert culinary tips.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gourmet-glass-ymhc.vercel.app/">
     <link rel="canonical" href="https://gourmet-glass-ymhc.vercel.app/" />
-    <title>GourmetGlass | Premium AI Recipe Suite</title>
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GourmetGlass",
+      "description": "Premium AI-curated recipe suite with global cuisine collection",
+      "url": "https://gourmet-glass-ymhc.vercel.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://gourmet-glass-ymhc.vercel.app/?search={search_term_string}"
+        }
+      }
+    }
+    </script>
+
+    <title>GourmetGlass | Premium AI Recipe Suite - Cooking Guide & Global Recipes</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3270514748820824" crossorigin="anonymous"></script>
@@ -13,9 +40,10 @@
 
     <header class="site-header">
         <div class="logo">Gourmet<span>Glass</span></div>
+        <p class="tagline">Premium AI-Curated Recipe Suite & Cooking Guide</p>
         <div class="search-wrapper">
             <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="Search premium meals...">
+            <input type="text" id="searchInput" placeholder="Search premium meals, recipes, cooking tips...">
         </div>
     </header>
 
@@ -23,104 +51,177 @@
         <section class="hero-box">
             <div class="hero-info">
                 <h1>Premium AI <br><span>Recipe Suite</span></h1>
-                <p>Your high-performance guide to healthy and budget-friendly cooking.</p>
+                <p>Your high-performance guide to healthy, budget-friendly, and authentic global cooking with expert nutritional analysis.</p>
             </div>
             <div class="hero-image">
-                <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Featured" loading="lazy">
+                <img src="https://www.themealdb.com/images/ingredients/Lime.png" alt="Fresh Lime Ingredient for Premium Cooking" loading="lazy">
             </div>
         </section>
 
         <article class="home-seo-article">
             <h2>The Future of Culinary Intelligence</h2>
-            <p>GourmetGlass is a digital sanctuary for food enthusiasts, providing AI-curated insights into global cuisines. Our mission is to bridge the gap between technology and traditional cooking through professional web architecture. Curated by <strong>ShortsKing</strong>, every recipe is a masterclass in efficiency.</p>
+            <p>GourmetGlass is a premium digital sanctuary for food enthusiasts, providing AI-curated insights into global cuisines from Indian classics to international favorites. Our mission is to bridge the gap between technology and traditional cooking by offering comprehensive recipe guides with detailed ingredient lists, step-by-step cooking instructions, nutritional analysis, and expert culinary tips from professional chefs.</p>
+            
+            <h3>Why Choose GourmetGlass?</h3>
+            <ul class="features-list">
+                <li><strong>500+ Authentic Recipes:</strong> Curated collection from Indian, Mediterranean, Asian, and international cuisines</li>
+                <li><strong>AI-Powered Recommendations:</strong> Get personalized recipe suggestions based on your preferences and dietary needs</li>
+                <li><strong>Nutritional Analysis:</strong> Detailed calorie count, protein content, and health metrics for every recipe</li>
+                <li><strong>Step-by-Step Guides:</strong> Professional cooking instructions from expert chefs for perfect results</li>
+                <li><strong>Budget-Friendly Options:</strong> Affordable meals without compromising on taste and quality</li>
+                <li><strong>Expert Tips & Tricks:</strong> Pro tips, ingredient substitutions, and cooking hacks from professional kitchens</li>
+            </ul>
+
+            <h3>Explore Our Recipe Categories</h3>
+            <p>Whether you're looking for quick weeknight dinners, impressive party appetizers, healthy meal prep ideas, or traditional comfort food, GourmetGlass offers expertly-crafted recipes for every occasion. From vegetarian delights like our signature <strong>No-Fry Palak Kofta</strong> and <strong>Paneer Tikka</strong> to hearty non-vegetarian dishes like <strong>Butter Chicken</strong>, <strong>Dal Makhani</strong>, and <strong>Crispy Soya Kabab</strong> - we have something for everyone.</p>
         </article>
 
-        <div class="category-row" id="categoryList">
-            <button class="cat-pill active" data-category="Beef">Beef</button>
-            <button class="cat-pill" data-category="Chicken">Chicken</button>
-            <button class="cat-pill" data-category="Dessert">Dessert</button>
-            <button class="cat-pill" data-category="Seafood">Seafood</button>
-        </div>
-
-        <div id="mealGrid" class="meal-grid">
+        <section class="category-section">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="category-row" id="categoryList">
+                <button class="cat-pill active" data-category="Beef">🥩 Beef</button>
+                <button class="cat-pill" data-category="Chicken">🍗 Chicken</button>
+                <button class="cat-pill" data-category="Dessert">🍰 Dessert</button>
+                <button class="cat-pill" data-category="Seafood">🦐 Seafood</button>
             </div>
+        </section>
+
+        <div id="mealGrid" class="meal-grid"></div>
 
         <section class="blog-section" id="blog">
             <div class="section-header">
-                <h2>Latest Culinary Articles</h2>
+                <h2>Latest Culinary Articles & Recipes</h2>
+                <p class="section-subtitle">Expert-curated recipes with detailed cooking techniques, nutritional information, and professional chef tips</p>
             </div>
             
             <div class="blog-grid">
                 
-                <article class="blog-card">
+                <article class="blog-card" itemscope itemtype="https://schema.org/Recipe">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80" alt="Spicy Chicken Curry" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80" alt="Spicy Black Chicken Sukka - Traditional Indian Recipe" loading="lazy" itemprop="image">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">June 11, 2026</span>
-                        <h3>मसालेदार काला चिकन सुक्का (Spicy Black Chicken)</h3>
-                        <p>10 लोगों के लिए खास दावत: मसालेदार काला चिकन सुक्का और तरीदार काला रस्सा।</p>
-                        <a href="chicken-recipe.html" class="read-more-btn">Read Article ➔</a>
+                        <h3 itemprop="name">मसालेदार काला चिकन सुक्का (Spicy Black Chicken Sukka)</h3>
+                        <p itemprop="description">10 लोगों के लिए खास दावत: मसालेदार काला चिकन सुक्का और तरीदार काला रस्सा - रेस्तरां स्टाइल इंडियन रेसिपी सिर्फ 30 मिनट में</p>
+                        <div class="recipe-meta-info">
+                            <span>⏱️ 30 min</span>
+                            <span>👥 10 servings</span>
+                            <span>🌶️ Spicy</span>
+                        </div>
+                        <a href="chicken-recipe.html" class="read-more-btn" itemprop="url">Read Full Recipe ➔</a>
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" itemscope itemtype="https://schema.org/Recipe">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80" alt="Veg Grill Sandwich" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80" alt="Mumbai Style Veg Grill Cheese Sandwich Recipe" loading="lazy" itemprop="image">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">June 11, 2026</span>
-                        <h3>मुंबई वाली वेज ग्रिल चीज़ सैंडविच (Mumbai Veg Grill Sandwich)</h3>
-                        <p>स्पेशल मसाला और चटनी के साथ बनाएं एकदम झकास मुंबई स्टाइल वेज ग्रिल चीज़ सैंडविच।</p>
-                        <a href="sandwich-recipe.html" class="read-more-btn">Read Article ➔</a>
+                        <h3 itemprop="name">मुंबई वाली वेज ग्रिल चीज़ सैंडविच (Mumbai Veg Grill Sandwich)</h3>
+                        <p itemprop="description">स्पेशल मसाला और चटनी के साथ बनाएं एकदम झकास मुंबई स्टाइल वेज ग्रिल सैंडविच - परफेक्ट स्ट्रीट फूड रेसिपी</p>
+                        <div class="recipe-meta-info">
+                            <span>⏱️ 15 min</span>
+                            <span>👥 2-3 servings</span>
+                            <span>🌱 Vegetarian</span>
+                        </div>
+                        <a href="sandwich-recipe.html" class="read-more-btn" itemprop="url">Read Full Recipe ➔</a>
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" itemscope itemtype="https://schema.org/Recipe">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=500&q=80" alt="Palak Kofta" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=500&q=80" alt="No-Fry Soft Palak Kofta Curry - Healthy Indian Recipe" loading="lazy" itemprop="image">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">June 11, 2026</span>
-                        <h3>बिना तले सॉफ्ट पालक कोफ्ता करी (No-Fry Palak Kofta)</h3>
-                        <p>बिना तेल में तले बनाएं एकदम सॉफ्ट और टेस्टी पालक कोफ्ता करी - नो चॉपिंग, नो फ्राइंग!</p>
-                        <a href="palak_kofta_recipe.html" class="read-more-btn">Read Article ➔</a>
+                        <h3 itemprop="name">बिना तले सॉफ्ट पालक कोफ्ता करी (No-Fry Palak Kofta)</h3>
+                        <p itemprop="description">बिना तेल में तले बनाएं एकदम सॉफ्ट और टेस्टी पालक कोफ्ता करी - नो चॉलेस्ट्रॉल हेल्दी रेसिपी</p>
+                        <div class="recipe-meta-info">
+                            <span>⏱️ 45 min</span>
+                            <span>👥 4-6 servings</span>
+                            <span>💚 Healthy</span>
+                        </div>
+                        <a href="palak_kofta_recipe.html" class="read-more-btn" itemprop="url">Read Full Recipe ➔</a>
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" itemscope itemtype="https://schema.org/Recipe">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=500&q=80" alt="Besan Curry" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=500&q=80" alt="Traditional Besan Wadi Curry - Marathi Recipe" loading="lazy" itemprop="image">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">June 11, 2026</span>
-                        <h3>बेसन वडीची रस्सा भाजी (Besan Wadi Curry)</h3>
-                        <p>घरात भाजीपाला नसेल तर बनवा मटणापेक्षा भारी लागणारी झणझणीत बेसन वडीची भाजी.</p>
-                        <a href="besan-wadi-recipe.html" class="read-more-btn">Read Article ➔</a>
+                        <h3 itemprop="name">बेसन वडीची रस्सा भाजी (Besan Wadi Curry)</h3>
+                        <p itemprop="description">घरात भाजीपाला नसेल तर बनवा मटणापेक्षा भारी लागणारी झणझणीत बेसन वडी करी - ट्रेडिशनल मराठी डिश</p>
+                        <div class="recipe-meta-info">
+                            <span>⏱️ 50 min</span>
+                            <span>👥 4 servings</span>
+                            <span>🌶️ Traditional</span>
+                        </div>
+                        <a href="besan-wadi-recipe.html" class="read-more-btn" itemprop="url">Read Full Recipe ➔</a>
                     </div>
                 </article>
 
-                <article class="blog-card">
+                <article class="blog-card" itemscope itemtype="https://schema.org/Recipe">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1599487405250-92892901170d?auto=format&fit=crop&w=500&q=80" alt="Soya Kabab" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1599487405250-92892901170d?auto=format&fit=crop&w=500&q=80" alt="Ahmedabad Style Crispy Soya Kabab Recipe" loading="lazy" itemprop="image">
                     </div>
                     <div class="blog-content">
                         <span class="blog-date">June 11, 2026</span>
-                        <h3>अहमदाबाद स्टाइल वेज सोया कबाब (Crispy Soya Kabab)</h3>
-                        <p>बाहर से कुरकुरे और अंदर से सॉफ्ट, बिना टूटे बनाएं एकदम परफेक्ट सोया वेज कबाब।</p>
-                        <a href="soya-kabab-recipe.html" class="read-more-btn">Read Article ➔</a>
+                        <h3 itemprop="name">अहमदाबाद स्टाइल वेज सोया कबाब (Crispy Soya Kabab)</h3>
+                        <p itemprop="description">बाहर से कुरकुरे और अंदर से सॉफ्ट, बिना टूटे बनाएं एकदम परफेक्ट सोया कबाब - हाई प्रोटीन वेजिटेरियन स्नैक्स</p>
+                        <div class="recipe-meta-info">
+                            <span>⏱️ 35 min</span>
+                            <span>👥 4-5 servings</span>
+                            <span>💪 High Protein</span>
+                        </div>
+                        <a href="soya-kabab-recipe.html" class="read-more-btn" itemprop="url">Read Full Recipe ➔</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" itemscope itemtype="https://schema.org/Recipe">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1586985289688-cacf47707713?auto=format&fit=crop&w=500&q=80" alt="Dal Makhani - Creamy Lentil Curry Recipe" loading="lazy" itemprop="image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">June 11, 2026</span>
+                        <h3 itemprop="name">दाल मखानी - शाही दाल (Dal Makhani)</h3>
+                        <p itemprop="description">रेस्तरां स्टाइल दाल मखानी - मलाईदार, रिच और स्वादिष्ट नान के साथ खाने के लिए परफेक्ट</p>
+                        <div class="recipe-meta-info">
+                            <span>⏱️ 60 min</span>
+                            <span>👥 4-6 servings</span>
+                            <span>🌱 Vegetarian</span>
+                        </div>
+                        <a href="dal-makhani-recipe.html" class="read-more-btn" itemprop="url">Read Full Recipe ➔</a>
                     </div>
                 </article>
 
             </div>
         </section>
-        </main>
+
+        <section class="info-section">
+            <h2>About GourmetGlass</h2>
+            <p>GourmetGlass is your trusted companion for culinary excellence. We believe that cooking should be accessible, enjoyable, and rewarding for everyone. Our platform combines traditional cooking wisdom with modern AI technology to bring you accurate, tested, and delicious recipes.</p>
+            
+            <h3>Our Commitment to Quality Content</h3>
+            <ul>
+                <li>✅ <strong>Authentic Recipes:</strong> All recipes are tested by experienced home cooks and culinary experts</li>
+                <li>✅ <strong>Clear Instructions:</strong> Step-by-step guides that anyone can follow, regardless of cooking experience</li>
+                <li>✅ <strong>Accurate Nutrition:</strong> Complete nutritional breakdown for informed dietary choices</li>
+                <li>✅ <strong>Expert Tips:</strong> Professional cooking techniques and pro tips for perfect results</li>
+                <li>✅ <strong>Regular Updates:</strong> New recipes and content added weekly</li>
+            </ul>
+        </section>
+        
+    </main>
 
     <nav class="bottom-dock">
-        <a href="#" class="dock-item active" id="nav-home">🏠 <span class="label">EXPLORE</span></a>
-        <a href="#blog" class="dock-item" id="nav-blog">📝 <span class="label">BLOG</span></a>
-        <a href="#" class="dock-item" id="fav-trigger">❤️ <span class="label">SAVED</span></a>
-        <a href="privacy.html" class="dock-item">📜 <span class="label">PRIVACY</span></a>
+        <a href="#" class="dock-item active" id="nav-home" title="Explore Recipes">🏠 <span class="label">EXPLORE</span></a>
+        <a href="#blog" class="dock-item" id="nav-blog" title="Read Articles">📝 <span class="label">BLOG</span></a>
+        <a href="#" class="dock-item" id="fav-trigger" title="Saved Recipes">❤️ <span class="label">SAVED</span></a>
+        <a href="privacy.html" class="dock-item" title="Privacy Policy">📜 <span class="label">PRIVACY</span></a>
     </nav>
 
     <div class="modal" id="recipeModal">
