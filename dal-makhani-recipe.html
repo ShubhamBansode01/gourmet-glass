@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दाल मखानी - शाही दाल - Recipe Blog</title>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #b71c1c;
+            --text-color: #333;
+            --bg-color: #f9f6f0;
+            --container-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin-top: 0;
+            line-height: 1.3;
+        }
+
+        h2, h3 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.05em;
+        }
+
+        .recipe-meta {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fafafa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .recipe-meta th, .recipe-meta td {
+            border: 1px solid #eaeaea;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .recipe-meta th {
+            background-color: #f0f0f0;
+            font-weight: 600;
+            width: 40%;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .tip-box {
+            background-color: #fff8e1;
+            border-left: 5px solid #ffb300;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .tip-box strong {
+            color: #f57f17;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .promo-box {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .promo-box h4 {
+            margin-top: 0;
+            color: #2e7d32;
+            font-size: 1.2em;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .blog-container {
+                padding: 20px;
+            }
+            .hero-image {
+                height: 250px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="blog-container">
+    <h1>🍲 रेस्तरां स्टाइल दाल मखानी - शाही दाल की रेसिपी</h1>
+    
+    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=80" alt="Dal Makhani" class="hero-image">
+
+    <p>दाल मखानी हर भारतीय परिवार की पसंद है। मलाईदार, रिच और स्वादिष्ट यह दाल नान के साथ खाने में अद्भुत होती है। इसे बनाना सीखना है तो यह सही रेसिपी है। घर पर ही रेस्तरां जैसी दाल मखानी तैयार करें।</p>
+
+    <p>इस रेसिपी में हम काली किडनी बीन्स और पूरी मसूर की दाल का इस्तेमाल करेंगे। धीरे-धीरे पकेगी लेकिन नतीजा आपको मुंह में पानी ला देगा।</p>
+
+    <h3>⏱️ रेसिपी का संक्षिप्त विवरण</h3>
+    <table class="recipe-meta">
+        <tbody>
+            <tr>
+                <th>तैयारी का समय</th>
+                <td>रातभर भिगोना + 1 घंटा पकाना</td>
+            </tr>
+            <tr>
+                <th>कितने लोगों के लिए?</th>
+                <td>4 से 6 व्यक्ति</td>
+            </tr>
+            <tr>
+                <th>रेसिपी का प्रकार</th>
+                <td>वेज (ग्रेवी डिश)</td>
+            </tr>
+            <tr>
+                <th>कैलोरीज</th>
+                <td>220 कैलोरीज प्रति सर्विंग</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>🥘 सामग्री (Ingredients)</h3>
+    <p><strong>दाल के लिए:</strong></p>
+    <ul>
+        <li><strong>काली किडनी बीन्स (राजमा):</strong> 1 कप (रातभर भिगोई हुई)</li>
+        <li><strong>पूरी मसूर की दाल:</strong> 1/2 कप (धुली हुई)</li>
+        <li><strong>हल्दी पाउडर:</strong> 1/2 चम्मच</li>
+        <li><strong>नमक:</strong> स्वादानुसार</li>
+        <li><strong>पानी:</strong> 4-5 कप</li>
+    </ul>
+
+    <p><strong>मसाले और अन्य सामग्री के लिए:</strong></p>
+    <ul>
+        <li><strong>प्याज:</strong> 2 बड़े (बारीक कटे हुए)</li>
+        <li><strong>अदरक-लहसुन पेस्ट:</strong> 1.5 चम्मच</li>
+        <li><strong>हरी मिर्च:</strong> 2 (बारीक कटी हुई)</li>
+        <li><strong>टमाटर:</strong> 2 बड़े (बारीक कटे हुए)</li>
+        <li><strong>मक्खन:</strong> 3 चम्मच</li>
+        <li><strong>क्रीम:</strong> 1/2 कप</li>
+        <li><strong>दही:</strong> 1/4 कप</li>
+        <li><strong>जीरा:</strong> 1 चम्मच (साबुत)</li>
+        <li><strong>लाल मिर्च पाउडर:</strong> 1 चम्मच</li>
+        <li><strong>गरम मसाला:</strong> 1/2 चम्मच</li>
+        <li><strong>काली मिर्च:</strong> 1/4 चम्मच (पिसी हुई)</li>
+        <li><strong>धनिया पत्ते:</strong> 2 चम्मच (बारीक कटे हुए)</li>
+        <li><strong>तेल:</strong> 2 चम्मच</li>
+    </ul>
+
+    <h3>👨‍🍳 बनाने की विधि (Step-by-Step Instructions)</h3>
+    
+    <h4>स्टेप 1: दाल को पकाना</h4>
+    <ol>
+        <li>प्रेशर कुकर में भिगोई हुई राजमा और धुली हुई मसूर की दाल डालें।</li>
+        <li>हल्दी पाउडर, नमक और 4-5 कप पानी डालें।</li>
+        <li>5-6 सीटी तक पकाएं (या जब तक दाल पूरी तरह नरम न हो जाए)।</li>
+        <li>ठंडा होने दें और कुकर खोलें।</li>
+    </ol>
+
+    <div class="tip-box">
+        <strong>💡 खास टिप:</strong>
+        दाल को एकदम नरम न करें, बस अच्छी तरह नरम हो जाए। उसे मैश न करें, पूरे दानें रखें।
+    </div>
+
+    <h4>स्टेप 2: प्याज-अदरक का तड़का लगाना</h4>
+    <ol>
+        <li>एक पैन में 2 चम्मच तेल गरम करें।</li>
+        <li>प्याज को तब तक पकाएं जब तक वह सुनहरा न हो जाए।</li>
+        <li>अदरक-लहसुन पेस्ट डालकर अच्छी तरह पकाएं।</li>
+        <li>हरी मिर्च भी डालें और मिलाएं।</li>
+    </ol>
+
+    <h4>स्टेप 3: टमाटर और मसाले डालना</h4>
+    <ol>
+        <li>कटे हुए टमाटर डालें।</li>
+        <li>लाल मिर्च पाउडर और गरम मसाला डालकर अच्छी तरह मिलाएं।</li>
+        <li>तब तक पकाएं जब तक टमाटर पूरी तरह नरम न हो जाए।</li>
+    </ol>
+
+    <h4>स्टेप 4: दाल में मसाला मिलाना</h4>
+    <ol>
+        <li>पकी हुई दाल को तड़के वाले पैन में डालें।</li>
+        <li>अच्छी तरह मिलाएं।</li>
+        <li>अब 3 चम्मच मक्खन डालें।</li>
+        <li>क्रीम और दही मिलाएं।</li>
+        <li>काली मिर्च डालकर सब कुछ अच्छी तरह मिलाएं।</li>
+    </ol>
+
+    <div class="promo-box">
+        <h4>🍳 अंतिम पकाना</h4>
+        <p>15-20 मिनट और धीमी आंच पर पकाएं। बीच-बीच में हिलाते रहें। दाल को थोड़ा-सा गाढ़ा रहना चाहिए, पतला नहीं। जब सब कुछ अच्छी तरह मिल जाए तो आंच बंद करें।</p>
+    </div>
+
+    <h4>स्टेप 5: परोसना</h4>
+    <ol>
+        <li>दाल को कटोरी में निकालें।</li>
+        <li>ऊपर से ताजा धनिया के पत्ते से सजाएं।</li>
+        <li>एक पीस मक्खन ऊपर रखें।</li>
+        <li>गर्म नान या रोटी के साथ परोसें।</li>
+    </ol>
+
+    <h3>🎯 दाल मखानी परफेक्ट बनाने की टिप्स</h3>
+    <ul>
+        <li>राजमा को रातभर जरूर भिगोएं, यह दाल का आधार है।</li>
+        <li>ताजी क्रीम और मक्खन इस्तेमाल करें - यह डिश की खूबसूरती है।</li>
+        <li>आंच हमेशा धीमी रखें, तेजी से पकाने से दाल का स्वाद खराब होता है।</li>
+        <li>बची हुई दाल को फ्रिज में 3-4 दिन रख सकते हैं।</li>
+        <li>अगर दाल गाढ़ी हो गई तो थोड़ा पानी या क्रीम और डालें।</li>
+    </ul>
+
+    <div class="footer-note">
+        यह शानदार दाल मखानी रेसिपी आपको कैसी लगी? इसे बनाकर अपना अनुभव शेयर करें। धन्यवाद!
+    </div>
+
+</div>
+
+</body>
+</html>
