@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मक्खन मुर्ग करी - शाही अंदाज - Recipe Blog</title>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #b71c1c;
+            --text-color: #333;
+            --bg-color: #f9f6f0;
+            --container-bg: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2em;
+            margin-top: 0;
+            line-height: 1.3;
+        }
+
+        h2, h3 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.05em;
+        }
+
+        .recipe-meta {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fafafa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .recipe-meta th, .recipe-meta td {
+            border: 1px solid #eaeaea;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .recipe-meta th {
+            background-color: #f0f0f0;
+            font-weight: 600;
+            width: 40%;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        .tip-box {
+            background-color: #fff8e1;
+            border-left: 5px solid #ffb300;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .tip-box strong {
+            color: #f57f17;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .promo-box {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .promo-box h4 {
+            margin-top: 0;
+            color: #2e7d32;
+            font-size: 1.2em;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .blog-container {
+                padding: 20px;
+            }
+            .hero-image {
+                height: 250px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="blog-container">
+    <h1>🍗 शाही अंदाज में मक्खन मुर्ग करी - घर पर रेस्तरां स्टाइल</h1>
+    
+    <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=1000&q=80" alt="Butter Chicken" class="hero-image">
+
+    <p>बटर चिकन या मक्खन मुर्ग भारतीय रेस्तरां का सबसे लोकप्रिय डिश है। नरम, रसीला चिकन, मलाईदार टमाटर की ग्रेवी और मक्खन का स्वाद - यह कॉम्बिनेशन किसको पसंद नहीं आता? बस इस एक रेसिपी को याद कर लें और हर दिन घर पर इसे बनाएं।</p>
+
+    <p>यह रेसिपी साधारण सामग्री से बनती है लेकिन स्वाद किसी महंगे रेस्तरां जैसा ही होता है। तो चलिए शुरू करते हैं।</p>
+
+    <h3>⏱️ रेसिपी का संक्षिप्त विवरण</h3>
+    <table class="recipe-meta">
+        <tbody>
+            <tr>
+                <th>तैयारी का समय</th>
+                <td>15 मिनट + 30 मिनट मैरिनेशन</td>
+            </tr>
+            <tr>
+                <th>कितने लोगों के लिए?</th>
+                <td>4 से 6 व्यक्ति</td>
+            </tr>
+            <tr>
+                <th>रेसिपी का प्रकार</th>
+                <td>नॉन-वेज (ग्रेवी डिश)</td>
+            </tr>
+            <tr>
+                <th>कैलोरीज</th>
+                <td>280 कैलोरीज प्रति सर्विंग</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>🥘 सामग्री (Ingredients)</h3>
+    <p><strong>चिकन को मैरिनेट करने के लिए:</strong></p>
+    <ul>
+        <li><strong>चिकन (बोनलेस):</strong> 750 ग्राम (छोटे टुकड़ों में)</li>
+        <li><strong>दही:</strong> 1/2 कप</li>
+        <li><strong>नींबू का रस:</strong> 1 चम्मच</li>
+        <li><strong>अदरक-लहसुन पेस्ट:</strong> 1 चम्मच</li>
+        <li><strong>लाल मिर्च पाउडर:</strong> 1/2 चम्मच</li>
+        <li><strong>नमक:</strong> स्वादानुसार</li>
+    </ul>
+
+    <p><strong>ग्रेवी के लिए:</strong></p>
+    <ul>
+        <li><strong>टमाटर:</strong> 6-7 बड़े (प्यूरी बनाए हुए)</li>
+        <li><strong>प्याज:</strong> 2 बड़े (बारीक कटे हुए)</li>
+        <li><strong>मक्खन:</strong> 4 चम्मच</li>
+        <li><strong>दही:</strong> 1/2 कप (ग्रेवी के लिए)</li>
+        <li><strong>क्रीम:</strong> 1/4 कप (या मलाई)</li>
+        <li><strong>अदरक-लहसुन पेस्ट:</strong> 1.5 चम्मच</li>
+        <li><strong>हरी मिर्च:</strong> 2 (बारीक कटी हुई)</li>
+        <li><strong>गरम मसाला:</strong> 1 चम्मच</li>
+        <li><strong>अजवाइन:</strong> 1/4 चम्मच</li>
+        <li><strong>काली मिर्च:</strong> 1/4 चम्मच (पिसी हुई)</li>
+        <li><strong>तेल:</strong> 2 चम्मच</li>
+        <li><strong>नमक:</strong> स्वादानुसार</li>
+    </ul>
+
+    <h3>👨‍🍳 बनाने की विधि (Step-by-Step Instructions)</h3>
+    
+    <h4>स्टेप 1: चिकन को मैरिनेट करना</h4>
+    <ol>
+        <li>चिकन के टुकड़ों को एक कटोरी में लें।</li>
+        <li>दही, नींबू का रस, अदरक-लहसुन पेस्ट, लाल मिर्च और नमक डालें।</li>
+        <li>अच्छी तरह मिलाकर कम से कम 30 मिनट के लिए मैरिनेट करें।</li>
+    </ol>
+
+    <div class="tip-box">
+        <strong>💡 खास टिप:</strong>
+        चिकन को रात भर के लिए मैरिनेट करें। इससे वह और नरम और स्वादिष्ट बनेगा।
+    </div>
+
+    <h4>स्टेप 2: चिकन को पकाना</h4>
+    <ol>
+        <li>एक पैन में 2 चम्मच तेल गरम करें।</li>
+        <li>मैरिनेटेड चिकन को तेल में डालें और अच्छी तरह सील करें।</li>
+        <li>जब चिकन सफेद हो जाए तो निकाल लें। पूरी तरह पकाने की जरूरत नहीं है।</li>
+    </ol>
+
+    <h4>स्टेप 3: ग्रेवी तैयार करना</h4>
+    <ol>
+        <li>उसी पैन में 4 चम्मच मक्खन डालें।</li>
+        <li>प्याज को इतने समय तक पकाएं जब तक वह नरम न हो जाए।</li>
+        <li>अब अदरक-लहसुन पेस्ट डालें और अच्छी तरह पकाएं।</li>
+        <li>टमाटर की प्यूरी डालकर अच्छी तरह मिलाएं।</li>
+        <li>तब तक पकाएं जब तक तेल अलग न दिखने लगे (लगभग 8-10 मिनट)।</li>
+    </ol>
+
+    <h4>स्टेप 4: मसाले डालना और चिकन मिलाना</h4>
+    <ol>
+        <li>गरम मसाला, अजवाइन, काली मिर्च डालकर अच्छी तरह मिलाएं।</li>
+        <li>दही को अलग से हिलाकर ग्रेवी में डालें।</li>
+        <li>क्रीम भी डालें और मिलाएं।</li>
+        <li>अब पका हुआ चिकन डालकर अच्छी तरह मिलाएं।</li>
+        <li> 5-7 मिनट और पकाएं ताकि सब स्वाद आपस में मिल जाए।</li>
+    </ol>
+
+    <div class="promo-box">
+        <h4>🌟 अंतिम स्पर्श</h4>
+        <p>हरी मिर्च से गार्निश करें। ताजा धनिया के पत्तों से सजाएं। गर्म-गर्म नान, रोटी या चावल के साथ परोसें।</p>
+    </div>
+
+    <h3>🎯 बटर चिकन परफेक्ट बनाने की टिप्स</h3>
+    <ul>
+        <li>हमेशा ताजा क्रीम इस्तेमाल करें, बासी क्रीम का स्वाद अलग होता है।</li>
+        <li>मक्खन की गुणवत्ता अच्छी हो - यह डिश का असली हीरो है।</li>
+        <li>ग्रेवी बहुत गाढ़ी न हो जाए, उसे थोड़ा-सा पतला रखें।</li>
+        <li>अगर कोई स्पाइसी नहीं खाता तो लाल मिर्च कम करें लेकिन क्रीम ज्यादा डालें।</li>
+    </ul>
+
+    <div class="footer-note">
+        यह शानदार बटर चिकन रेसिपी आपको कैसी लगी? इसे बनाकर अपना अनुभव शेयर करें। धन्यवाद!
+    </div>
+
+</div>
+
+</body>
+</html>
